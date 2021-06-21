@@ -1,0 +1,25 @@
+name:                haskell-2048game
+version:             0.1.0
+github:              "https://github.com/EdmundGoodman/haskell-2048game"
+license:             MIT
+author:              "Edmund Goodman"
+copyright:           "2021 EdmundGoodman"
+description:         Please see the README on GitHub at <https://github.com/EdmundGoodman/haskell-2048game#readme>
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base
+
+library:
+  source-dirs: src
+  dependencies:
+    - base
+
+executables:
+  haskell-2048game:
+    main:                Main.hs
+    source-dirs:         exe
+    dependencies:
+    - base
