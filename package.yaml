@@ -16,6 +16,10 @@ library:
   source-dirs: src
   dependencies:
     - base
+    - array
+  when:
+    - condition: false
+      other-modules: Paths_haskell_2048game 
 
 executables:
   haskell-2048game:
@@ -23,3 +27,6 @@ executables:
     source-dirs:         exe
     dependencies:
     - base
+    when:
+      - condition: false
+        other-modules: Paths_haskell_2048game 

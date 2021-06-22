@@ -1,24 +1,48 @@
-name:                haskell-2048game
-version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/haskell-2048game#readme
-license:             BSD3
-license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2021 Author name here
-category:            Web
-build-type:          Simple
-extra-source-files:  README.md
-cabal-version:       >=1.10
+cabal-version: 1.12
 
-library
-  hs-source-dirs:      src
-  exposed-modules:     Lib
-  build-depends:       base >= 4.7 && < 5
-  default-language:    Haskell2010
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 6a66568fab6cb9fca81a1109fbc8834d502d50faafbc53c77ccbeb500921577b
+
+name:           haskell-2048game
+version:        0.1.0
+description:    Please see the README on GitHub at <https://github.com/EdmundGoodman/haskell-2048game#readme>
+homepage:       https://github.com/https://github.com/EdmundGoodman/haskell-2048game#readme
+bug-reports:    https://github.com/https://github.com/EdmundGoodman/haskell-2048game/issues
+author:         Edmund Goodman
+maintainer:     Edmund Goodman
+copyright:      2021 EdmundGoodman
+license:        MIT
+build-type:     Simple
+extra-source-files:
+    README.md
 
 source-repository head
-  type:     git
-  location: https://github.com/githubuser/haskell-2048game
+  type: git
+  location: https://github.com/https://github.com/EdmundGoodman/haskell-2048game
+
+library
+  exposed-modules:
+      Lib
+  hs-source-dirs:
+      src
+  build-depends:
+      array
+    , base
+  if false
+    other-modules:
+        Paths_haskell_2048game
+  default-language: Haskell2010
+
+executable haskell-2048game
+  main-is: Main.hs
+  hs-source-dirs:
+      exe
+  build-depends:
+      base
+  if false
+    other-modules:
+        Paths_haskell_2048game
+  default-language: Haskell2010
